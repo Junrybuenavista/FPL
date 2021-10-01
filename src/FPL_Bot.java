@@ -38,7 +38,7 @@ public class Test {
 		f = new File("C:\\FPL_Downloads\\Document.pdf");
 		updateComplete=false;
 		try {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jhunta\\eclipse\\selenium\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Jars\\chromedriver.exe");
 		
 		
 			HashMap<String,Object> chromePrefs = new HashMap<String, Object>();
