@@ -14,5 +14,7 @@
 	<classpathentry kind="lib" path="C:/Jars/Selenium/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="C:/Jars/Selenium/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Jars/mysql-connector.jar"/>
+	<classpathentry kind="lib" path="C:/Jars/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Jars/javax.mail-1.4.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

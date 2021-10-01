@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 //import org.testng.annotations.Test;
 //xidwgumwwowibzwt
-public class Test {
+public class FPL_Bot {
 
 	WebDriver driver;
 	JavascriptExecutor Jscript;
@@ -29,7 +29,7 @@ public class Test {
 	File f;
 	boolean updateComplete; 
 	
-	public Test(){
+	public FPL_Bot(){
 		
 		
 		setDataBaseConnection();
@@ -243,6 +243,7 @@ public class Test {
 	class Download extends Thread {
 		String acc_no;
 		Monitor mon;
+		String fileName;
 		public Download(String in,Monitor monitor) {
 			acc_no = in;
 			mon=monitor;
@@ -256,7 +257,9 @@ public class Test {
 					if(!f.exists()) {
 						
 					}else {
-						f.renameTo(new File("C:\\FPL_Downloads\\"+dateFormat.format(new Date())+"_"+acc_no+".pdf"));
+						fileName = dateFormat.format(new Date())+"_"+acc_no+".pdf";
+						f.renameTo(new File("C:\\FPL_Downloads\\"+fileName));
+						driver.get("http://localhost/gdrive/FPLServer.php?insert_onefile&Ac_no="+fileName);
 						System.out.println("Download thread complete");
 						mon.resume();
 						break;
@@ -267,5 +270,5 @@ public class Test {
 		}		
 	}
 	
-	public static void main(String args[]) {new Test();}
+	public static void main(String args[]) {new FPL_Bot();}
 }
