@@ -81,7 +81,7 @@ public class FPL_Bot {
 				
 				driver.findElement(By.id("core_view_form_ValidationTextBox_0")).sendKeys("bookkeeper@nbvresorts.com");
 				driver.findElement(By.id("core_view_form_ValidationTextBox_1")).sendKeys("2019SandaPar");
-				//driver.findElement(By.xpath("//input[@id='core_view_form_ValidationTextBox_1']")).sendKeys("2019SandaPar");			
+				//driver.findElement(By.xpath("//input[@id='core_view_form_ValidationTextBox_1']")).sendKeys("***");			
 				onClickId("Login","core_view_form_Button_0_label");
 									
 				rs=stmt.executeQuery("select * from fpl_accounts where Update_Date IS null OR NOT Update_Date = CURDATE()");
