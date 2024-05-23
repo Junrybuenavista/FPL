@@ -79,8 +79,8 @@ public class FPL_Bot {
 		public void run() {
 			try {
 				
-				driver.findElement(By.id("core_view_form_ValidationTextBox_0")).sendKeys("bookkeeper@nbvresorts.com");
-				driver.findElement(By.id("core_view_form_ValidationTextBox_1")).sendKeys("2019SandaPar");
+				driver.findElement(By.id("core_view_form_ValidationTextBox_0")).sendKeys("sdfsfsfsom");
+				driver.findElement(By.id("core_view_form_ValidationTextBox_1")).sendKeys("2fdsfsfsfsr");
 				//driver.findElement(By.xpath("//input[@id='core_view_form_ValidationTextBox_1']")).sendKeys("***");			
 				onClickId("Login","core_view_form_Button_0_label");
 									
